@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Reem Kufi';
+  src: url('./assets/ReemKufi.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('./assets/SpaceGrotesk.ttf') format('truetype');
+}
+
+:root {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  /* Variables */
+  --text-wrap-size: 23%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Dark/Light mode */
+  --text-color: #ffffff;
+  --background-color: #333;
+  --border-color: rgb(81, 81, 81);
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar-items {
+  float: left;
+}
+
+.navbar-items a {
+  font-family: 'Reem Kufi', sans-serif;
+  display: block;
+  color: var(--text-color);
+  text-align: center;
+  padding: 3px 16px;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.navbar-items button {
+  font-family: 'Reem Kufi', sans-serif;
+  display: block;
+  color: var(--text-color);
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+
+  background-color: var(--background-color);
+}
+
+.main-text {
+  font-family: 'Space Grotesk', sans-serif;
+  text-align: center;
+  margin-top: 32vh;
+  margin-left: var(--text-wrap-size);
+  margin-right: var(--text-wrap-size);
+  font-size: 30px;
+  word-wrap: normal;
+}
+
+.news {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  padding-left: 2%;
+  margin-top: 1%;
+}
+
+.report {
+  padding-right: 10%;
+}
+
+.border {
+  border-style: solid;
+  border-radius: 15px;
+  border-color: var(--border-color);
+}
+
+.bg {
+  background-color: var(--background-color);
+}
