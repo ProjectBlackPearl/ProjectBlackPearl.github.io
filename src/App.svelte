@@ -6,6 +6,7 @@
   import { data } from './Database'
   import News from './components/News.svelte'
   import MainText from './components/MainText.svelte'
+  import FAQ from "./components/FAQ.svelte"
 
   // @ts-ignore
   console.log(data.user)
@@ -19,6 +20,10 @@
   function newsPage() {
     page = 2
   }
+
+  function faqPage() {
+    page = 3
+  }
 </script>
 
 <main>
@@ -26,6 +31,16 @@
     <li class="navbar-items">
       <button class="active" on:click={homePage}>
         <i class="fa-solid fa-gamepad"></i> <b>Black Pearl</b>
+      </button>
+    </li>
+    <li class="navbar-items">
+      <button class="active" on:click={newsPage}>
+        <i class="fa-solid fa-newspaper"></i> <b>News</b>
+      </button>
+    </li>
+    <li class="navbar-items">
+      <button class="active" on:click={faqPage}>
+        <i class="fa-solid fa-question"></i> <b>FAQ</b>
       </button>
     </li>
     <li class="navbar-items">
@@ -38,17 +53,14 @@
         <i class="fa-brands fa-github"></i> Github
       </a>
     </li>
-    <li class="navbar-items">
-      <button class="active" on:click={newsPage}>
-        <i class="fa-solid fa-newspaper"></i> <b>News</b>
-      </button>
-    </li>
   </ul>
 
   {#if page === 1}
     <MainText/>
   {:else if page === 2}
     <News/>
+  {:else if page === 3}
+    <FAQ/>
   {:else}
     <MainText/>
   {/if}

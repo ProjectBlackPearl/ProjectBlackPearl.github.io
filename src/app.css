@@ -1,12 +1,4 @@
-@font-face {
-  font-family: 'Reem Kufi';
-  src: url('./assets/ReemKufi.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('./assets/SpaceGrotesk.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&family=Space+Grotesk:wght@500&display=swap');
 
 :root {
   font-family: 'Reem Kufi', sans-serif;
@@ -99,4 +91,14 @@ button {
 
 .bg {
   background-color: var(--background-color);
+}
+
+.faq-page {
+  margin-top: 1%;
+  padding-left: 1%;
+}
+
+.faq-page p {
+  font-size: 20px;
+  padding-right: 30%;
 }
