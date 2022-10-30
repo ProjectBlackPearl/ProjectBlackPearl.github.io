@@ -3,23 +3,21 @@
 </svelte:head>
 
 <script lang="ts">
+  // Imports
   import { data } from './Database'
   import News from './components/News.svelte'
   import MainText from './components/MainText.svelte'
   import FAQ from "./components/FAQ.svelte"
 
+  // Logs a sample data to fix a bug
   console.log(data.user)
-
   var page: number;
-
   function homePage() {
     page = 1
   }
-
   function newsPage() {
     page = 2
   }
-
   function faqPage() {
     page = 3
   }
