@@ -8,7 +8,6 @@
   import MainText from './components/MainText.svelte'
   import FAQ from "./components/FAQ.svelte"
 
-  // @ts-ignore
   console.log(data.user)
 
   var page: number;
@@ -25,43 +24,34 @@
     page = 3
   }
 </script>
-
 <main>
-  <ul class="navbar border bg">
-    <li class="navbar-items">
-      <button class="active" on:click={homePage}>
-        <i class="fa-solid fa-gamepad"></i> <b>Black Pearl</b>
-      </button>
-    </li>
-    <li class="navbar-items">
-      <button class="active" on:click={newsPage}>
-        <i class="fa-solid fa-newspaper"></i> <b>News</b>
-      </button>
-    </li>
-    <li class="navbar-items">
-      <button class="active" on:click={faqPage}>
-        <i class="fa-solid fa-question"></i> <b>FAQ</b>
-      </button>
-    </li>
-    <li class="navbar-items">
-      <a href="https://discord.gg/PbM5AjamNH">
-        <i class="fa-brands fa-discord"></i> Discord
-      </a>
-    </li>
-    <li class="navbar-items">
-      <a href="https://github.com/Project-Black-Pearl">
-        <i class="fa-brands fa-github"></i> Github
-      </a>
-    </li>
-  </ul>
+  <div id="Sidebar" class="sidebar">
+    <button id="item-1" class="spg" on:click={homePage}>
+      <img src="https://media.discordapp.net/attachments/922635062602788884/1035922289180557382/Logo.png?width=871&height=289" alt="" width="270">
+    </button>
+    <button id="item-2" class="spg" on:click={newsPage}>
+      News
+    </button>
+    <button id="item-3" class="spg" on:click={faqPage}>
+      FAQ
+    </button>
+    <a id="item-4" class="spg" href="https://discord.gg/PbM5AjamNH">
+      Discord
+    </a>
+    <a id="item-5" class="spg" href="https://github.com/Project-Black-Pearl">
+      GitHub
+    </a>
+  </div>
 
-  {#if page === 1}
-    <MainText/>
-  {:else if page === 2}
-    <News/>
-  {:else if page === 3}
-    <FAQ/>
-  {:else}
-    <MainText/>
-  {/if}
+  <div class="main-content">
+    {#if page === 1}
+      <MainText/>
+    {:else if page === 2}
+      <News/>
+    {:else if page === 3}
+      <FAQ/>
+    {:else}
+      <MainText/>
+    {/if}
+  </div>
 </main>

@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&family=Space+Grotesk:wght@500&display=swap');
 
 :root {
-  font-family: 'Reem Kufi', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 16px;
   line-height: 34px;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #0b0b0b;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,47 +19,84 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  /* Dark/Light mode */
+  /* Dark mode */
   --text-color: #ffffff;
   --background-color: #333;
   --border-color: rgb(81, 81, 81);
+
+  /* Border config */
+  --border-style: solid;
+  --border-width: 5px;
 }
 
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.sidebar {
+  height: 100%;
+  width: 280px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #d0144a;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-bottom: 5rem;
+
+  border-style: solid;
+  border-color: #ffffff;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-width: 6px;
 }
 
-.navbar-items {
-  float: left;
-}
-
-.navbar-items a {
-  font-family: 'Reem Kufi', sans-serif;
-  display: block;
-  color: var(--text-color);
-  text-align: center;
-  padding: 3px 16px;
+.sidebar button,
+.sidebar a {
+  line-height: 80px;
+  padding: 8px 8px 8px 0px;
   text-decoration: none;
-}
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  margin-left: 0px;
+  position: relative;
 
-button {
+  border: none;
+  background-color: #d0144a;
   cursor: pointer;
 }
 
-.navbar-items button {
-  font-family: 'Reem Kufi', sans-serif;
-  display: block;
-  color: var(--text-color);
-  text-align: center;
-  padding: 8px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  border: none;
+.sidebar #item-2,
+.sidebar #item-3,
+.sidebar #item-4,
+.sidebar #item-5 {
+  margin-top: 15px;
+  padding: 0px 0px 0px 32px;
 
-  background-color: var(--background-color);
+  border-style: var(--border-style);
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-width: var(--border-width);
+}
+
+.sidebar #item-6 {
+  margin-top: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 10px;
+  padding: 0px 0px 0px 32px;
+
+  border-style: var(--border-style);
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-width: var(--border-width);
+}
+
+.main-content {
+  margin-left: 250px;
 }
 
 .main-text {
@@ -78,10 +115,19 @@ button {
 }
 
 .news {
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 1%;
+  padding-left: 2%;
+
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.5rem;
-  padding-left: 2%;
-  margin-top: 1%;
+}
+
+.news-img {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #ffffff;
 }
 
 .report {
@@ -99,6 +145,7 @@ button {
 }
 
 .faq-page {
+  margin-left: 50px;
   margin-top: 1%;
   padding-left: 1%;
 }
@@ -110,4 +157,8 @@ button {
 
 .faq-time a {
   color: rgb(0, 116, 212);
+}
+
+.spg {
+  font-family: "Space Grotesk", sans-serif;
 }

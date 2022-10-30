@@ -9,9 +9,9 @@
     }
 </script>
 
-<div class="news border bg">
-    <h2 style="font-family: 'Reem Kufi', sans-serif;">
-        News page
+<div class="news">
+    <h2>
+        <i class="fa-solid fa-newspaper"></i> News
     </h2>
 
     <p>
