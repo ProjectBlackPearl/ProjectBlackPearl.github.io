@@ -36,6 +36,7 @@ export function readData() {
 
 // Exports the function
 export const data = readData()
+console.log(data.user)
 
 // Interfaces
 interface Database {
