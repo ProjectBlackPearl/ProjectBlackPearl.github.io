@@ -8,8 +8,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-image: url(/bg.png);
-  background-size: cover;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,6 +30,9 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  
+  background-image: url('./bg.png');
+  background-size: cover;
 }
 
 button{
@@ -95,13 +96,19 @@ button{
 }
 
 .title {
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 60px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 45px;
 }
 
-.main-text span {
+.main-text .subtitle {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.main-text .subsubtitle {
   letter-spacing: 10px;
+  line-height: 80px;
   font-weight: bold;
 }
 
@@ -112,7 +119,7 @@ button{
 }
 
 .app-img {
-  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 21px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: inset 0px 0px 40px 10px rgba(0,0,0,0.61);
 }
 
 /* Img */
@@ -133,6 +140,10 @@ button{
 }
 
 /* Final message */
+.final {
+  height: 137px;
+}
+
 .globe {
   margin-left: 50vh;
   margin-right: 50vh;
@@ -148,13 +159,15 @@ button{
   font-weight: 500;
   font-family: "Space Grotesk", sans-serif;
   color: var(--text-color);
-  padding: 4px 16px;
+  padding: 4px 10px;
+  padding-left: 50px;
+  padding-right: 50px;
   text-decoration: none;
 
   border-style: solid;
   border-color: var(--1);
   border-radius: 8px;
   border: transparent;
-  background-color: var(--1);
+  background: linear-gradient(90deg, rgba(82,0,0,0.2906835320290555) 0%, rgba(0,0,0,1) 100%);
   font-size: 20px;
 }

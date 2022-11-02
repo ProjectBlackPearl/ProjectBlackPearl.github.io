@@ -1,8 +1,11 @@
 <div class="main-text">
   <div class="title">
-    Game management.<br>
-    <span>
-      <b>Made perfect.</b>
+    The next generation of Media management<br>
+    <span class="subtitle">
+      Built in plugin support, open-source, and a nice UI?<br>
+    </span>
+    <span class="subsubtitle">
+      <b>there's everything to lose out on</b>
     </span>
   </div>
 
@@ -16,12 +19,12 @@
       </p>
       <br>
       <p class="tagline">
-        there's everything to lose out on.
+        up your media game today.
       </p>
     </div>
   </div>
 
   <a class="dl-btn" href="/">
-    start your journey today
+    Download
   </a>
 </div>
