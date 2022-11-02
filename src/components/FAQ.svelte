@@ -1,4 +1,4 @@
-<div class="faq-page border bg">
+<div class="faq-page">
     <h2>FAQ (Frequently asked questions)</h2>
     <div class="faq-time">
         <h2>

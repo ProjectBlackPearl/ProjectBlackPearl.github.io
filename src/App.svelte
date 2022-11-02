@@ -29,7 +29,7 @@
 
 <main> 
   <!-- Creates a ul element with anchors linking to different links -->
-  <ul class="navbar bg">
+  <ul class="navbar">
     <!-- Logo -->
     <li class="navbar-items">
        <img src="https://cdn.discordapp.com/attachments/922635062602788884/1035922289180557382/Logo.png" alt="Logo" width="250px">

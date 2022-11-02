@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&family=Space+Grotesk:wght@300;400;500;600;700&family=&display=swap');
 
 :root {
   font-family: 'Space Grotesk', sans-serif;
@@ -8,7 +8,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #530000;
+  background-image: url(/bg.png);
+  background-size: cover;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,18 +22,25 @@
 
   /* Dark mode */
   --text-color: #ffffff;
-  --background-color: rgba(0, 0, 0, 0.676);
+  --background-color: rgba(0, 0, 0, 0.535);
   --border-color: rgb(81, 81, 81);
   --1: rgba(255, 255, 255, 0.178);
 }
 
+/* Tags Config */
 body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
 
+button{
+  cursor: pointer;
+}
+
+/* Navbar */
 .navbar{
+  background-color: var(--background-color);
   list-style-type:none;
   margin:0;
   padding:0;
@@ -48,7 +56,7 @@ body {
   display: block;
   color: var(--text-color);
   text-align: center;
-  margin: 24px 7px;
+  margin: 24px 10px;
   padding: 4px 16px;
   text-decoration: none;
 
@@ -64,10 +72,6 @@ body {
   transform: translateY(7px);
 }
 
-button{
-  cursor: pointer;
-}
-
 .navbar-items button {
   font-family: "Space Grotesk", sans-serif;
   display: block;
@@ -80,10 +84,7 @@ button{
   background-color: #00000000;
 }
 
-.main-content {
-  margin-left: 250px;
-}
-
+/* Main Content */
 .main-text {
   font-family: 'Space Grotesk', sans-serif;
   text-align: center;
@@ -110,20 +111,49 @@ button{
   line-height: 20px;
 }
 
+.app-img {
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 21px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Quotes (idk why i called it reviews) */
 .reviews {
   font-weight: 500;
 }
 
-.main-text #t1,
+.reviews img {
+  display: inline-block;
+}
+
+.reviews p {
+  display: inline-block;
+}
+
+.spacer {
+  height: 20px;
+}
+
+/* Quotes config */
+.main-text #t1 {
+  transform: translateX(-300px) translateY(100px) rotate(-9deg);
+  font-size: 16px;
+}
+
+.main-text #t2 {
+  transform: translateX(-550px) translateY(250px) rotate(9deg);
+  font-size: 16px;
+}
+
 .main-text #t3 {
-  transform: translateX(-50px);
+  transform: translateX(500px) translateY(250px) rotate(-9deg);
+  font-size: 16px;
 }
 
-.main-text #t2,
 .main-text #t4 {
-  transform: translateX(60px);
+  transform: translateX(240px) translateY(100px) rotate(9deg);
+  font-size: 16px;
 }
 
+/* Final message */
 .globe {
   margin-left: 50vh;
   margin-right: 50vh;
@@ -132,14 +162,13 @@ button{
 .tagline {
   font-weight: 700;
   font-size: 30px !important;
+  margin-top: 0px;
 }
 
-.main-text a {
+.dl-btn {
   font-weight: 500;
   font-family: "Space Grotesk", sans-serif;
-  display: inline;
   color: var(--text-color);
-  text-align: center;
   padding: 4px 16px;
   text-decoration: none;
 
@@ -149,27 +178,4 @@ button{
   border: transparent;
   background-color: var(--1);
   font-size: 20px;
-}
-
-.bg {
-  background-color: var(--background-color);
-}
-
-.faq-page {
-  margin-left: 50px;
-  margin-top: 1%;
-  padding-left: 1%;
-}
-
-.faq-page p {
-  font-size: 20px;
-  padding-right: 30%;
-}
-
-.faq-time a {
-  color: rgb(0, 116, 212);
-}
-
-.spg {
-  font-family: "Space Grotesk", sans-serif;
 }

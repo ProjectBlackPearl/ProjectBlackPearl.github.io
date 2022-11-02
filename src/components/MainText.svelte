@@ -1,38 +1,27 @@
 <div class="main-text">
   <div class="title">
-    media exploration.<br>
+    Game management.<br>
     <span>
       <b>made perfect</b>
     </span>
   </div>
 
   <div class="reviews">
-    <p id="t1">
-      "why has nobody thought of this before?"<br>
-      discord member
-    </p>
-    <p id="t2">
-      "a blessing from god"<br>
-      discord member
-    </p>
-    <p id="t3">
-      "it's just an all in one, honestly"<br>
-      discord member
-    </p>
-    <p id="t4">
-      "you like media, you need this."<br>
-      discord member
-    </p>
-  
-    <p class="globe">
-      with a developer team from all around the globe, focused on community updates and perfection,
-    </p>
-    <p class="tagline">
-      there's everything to lose out on.
-    </p>
+    <div class="spacer">
+    </div>
+    <img class="app-img" src="https://media.discordapp.net/attachments/922635062602788884/1037390980967579658/PBP_current.PNG?width=1095&height=579" alt="img" width="700">
+    <div class="final">
+      <p class="globe">
+        with a developer team from all around the globe, focused on community updates and perfection,
+      </p>
+      <br>
+      <p class="tagline">
+        there's everything to lose out on.
+      </p>
+    </div>
   </div>
 
-  <a href="">
+  <a class="dl-btn" href="/">
     start your journey today
   </a>
 </div>
