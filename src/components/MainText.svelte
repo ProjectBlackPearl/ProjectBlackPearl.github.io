@@ -2,7 +2,7 @@
   <div class="title">
     Game management.<br>
     <span>
-      <b>made perfect</b>
+      <b>Made perfect.</b>
     </span>
   </div>
 

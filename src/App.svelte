@@ -3,28 +3,7 @@
 </svelte:head>
 
 <script lang="ts">
-  // Imports
-  import { data } from './Database'
-  import News from './components/News.svelte'
   import MainText from './components/MainText.svelte'
-  import FAQ from "./components/FAQ.svelte"
-
-  // @ts-ignore
-  console.log(data.user)
-
-  // Defines a variable for the page index
-  var page: number;
-
-  // Updates the index from 1 - 3
-  function homePage() {
-    page = 1
-  }
-  function newsPage() {
-    page = 2
-  }
-  function faqPage() {
-    page = 3
-  }
 </script>
 
 <main> 
@@ -54,13 +33,5 @@
     </li>
   </ul>
 
-  {#if page === 1}
-    <MainText/>
-  {:else if page === 2}
-    <News/>
-  {:else if page === 3}
-    <FAQ/>
-  {:else}
-    <MainText/>
-  {/if}
+  <MainText/>
 </main>

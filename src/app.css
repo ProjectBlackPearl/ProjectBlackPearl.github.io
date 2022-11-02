@@ -101,7 +101,7 @@ button{
 }
 
 .main-text span {
-  letter-spacing: 20px;
+  letter-spacing: 10px;
   font-weight: bold;
 }
 
@@ -115,7 +115,7 @@ button{
   box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 21px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Quotes (idk why i called it reviews) */
+/* Img */
 .reviews {
   font-weight: 500;
 }
@@ -130,27 +130,6 @@ button{
 
 .spacer {
   height: 20px;
-}
-
-/* Quotes config */
-.main-text #t1 {
-  transform: translateX(-300px) translateY(100px) rotate(-9deg);
-  font-size: 16px;
-}
-
-.main-text #t2 {
-  transform: translateX(-550px) translateY(250px) rotate(9deg);
-  font-size: 16px;
-}
-
-.main-text #t3 {
-  transform: translateX(500px) translateY(250px) rotate(-9deg);
-  font-size: 16px;
-}
-
-.main-text #t4 {
-  transform: translateX(240px) translateY(100px) rotate(9deg);
-  font-size: 16px;
 }
 
 /* Final message */
