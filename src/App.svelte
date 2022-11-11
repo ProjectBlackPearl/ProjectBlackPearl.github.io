@@ -15,13 +15,13 @@
     </li>
     <!-- Download URL (WIP) -->
     <li class="navbar-items" style="float:right">
-      <a href="https://github.com/Project-Black-Pearl">
+      <a href="https://github.com/ProjectBlackPearl/ProjectBlackPearl">
         Download
       </a>
     </li>
     <!-- Source code -->
     <li class="navbar-items" style="float:right">
-      <a href="https://github.com/Project-Black-Pearl">
+      <a href="https://github.com/ProjectBlackPearl">
         Source code
       </a>
     </li>
@@ -32,6 +32,5 @@
       </a>
     </li>
   </ul>
-
   <MainText/>
 </main>

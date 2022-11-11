@@ -21,10 +21,9 @@
       <p class="tagline">
         up your media game today.
       </p>
+      <a class="dl-btn" href="https://github.com/ProjectBlackPearl/ProjectBlackPearl">
+        Download
+      </a>
     </div>
   </div>
-
-  <a class="dl-btn" href="/">
-    Download
-  </a>
 </div>
