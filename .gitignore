@@ -24,4 +24,5 @@ dist-ssr
 *.sw?
 
 # Api Key 😰
+src/Database.ts
 src/FirebaseConfig.ts
