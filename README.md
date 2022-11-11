@@ -1,3 +1,4 @@
-# Project Black Pearl
+# projectblackpearl.github.io
 
-a website i made for it lol
+A Website made using Svelte, Typescript and CSS for this project<br>
+<sub>couldn't they make the name smaller tho?</sub>

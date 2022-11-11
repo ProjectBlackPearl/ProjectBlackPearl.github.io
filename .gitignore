@@ -22,7 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Api Key 😰
-src/Database.ts
-src/FirebaseConfig.ts
