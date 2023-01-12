@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&family=Space+Grotesk:wght@300;400;500;600;700&family=&display=swap");
 
 html {
-  background-image: url("bg.png");
+  background-image: url("../public/bg.png");
   background-size: cover;
 }
 
