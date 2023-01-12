@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&family=Space+Grotesk:wght@300;400;500;600;700&family=&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&family=Space+Grotesk:wght@300;400;500;600;700&family=&display=swap");
 
 html {
-  background-image: url('./bg.png');
+  background-image: url("bg.png");
   background-size: cover;
 }
 
-:root {  
-  font-family: 'Space Grotesk', sans-serif;
+:root {
+  font-family: "Space Grotesk", sans-serif;
   font-size: 16px;
   line-height: 34px;
   font-weight: 500;
@@ -37,20 +37,20 @@ body {
   overflow-x: hidden;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
 /* Navbar */
-.navbar{
+.navbar {
   background-color: var(--background-color);
-  list-style-type:none;
-  margin:0;
-  padding:0;
-  overflow:hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.navbar-items{
+.navbar-items {
   float: left;
 }
 
@@ -89,7 +89,7 @@ button{
 
 /* Main Content */
 .main-text {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   text-align: center;
   margin-top: 30px;
   text-align: center;
@@ -121,7 +121,7 @@ button{
 }
 
 .app-img {
-  box-shadow: inset 0px 0px 40px 10px rgba(0,0,0,0.61);
+  box-shadow: inset 0px 0px 40px 10px rgba(0, 0, 0, 0.61);
 }
 
 /* Img */
@@ -171,6 +171,10 @@ button{
   border-color: var(--1);
   border-radius: 8px;
   border: transparent;
-  background: linear-gradient(90deg, rgba(82,0,0,0.2906835320290555) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(82, 0, 0, 0.2906835320290555) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
   font-size: 20px;
 }

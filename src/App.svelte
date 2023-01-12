@@ -14,11 +14,7 @@
   <ul class="navbar">
     <!-- Logo -->
     <li class="navbar-items">
-      <img
-        src="https://github.com/ProjectBlackPearl/ProjectBlackPearl.github.io/blob/ghpages/assets/Logo.png?raw=true"
-        alt="Logo"
-        width="250px"
-      />
+      <img src="Logo.png" alt="Logo" width="250px" />
     </li>
     <!-- Download URL -->
     <li class="navbar-items" style="float:right">
