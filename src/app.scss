@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&family=Space+Grotesk:wght@300;400;500;600;700&family=&display=swap");
+
+$text-color: #fff;
+$background-color: rgba(0, 0, 0, 0.535);
+$border-color: rgb(81, 81, 81);
+$border-color2: rgba(255, 255, 255, 0.178);
+
+html {
+  background-image: url("/bg.png");
+  background-size: 300vw 300vh;
+  background-repeat: no-repeat;
+}
+
+:root {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: 500;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  outline: none;
+
+  /* Variables */
+  --text-wrap-size: 23%;
+}
+
+/* Tags Config */
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  background-color: $background-color;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  .navbar-items {
+    float: left;
+
+    a {
+      font-family: "Space Grotesk", sans-serif;
+      display: block;
+      color: $text-color;
+      text-align: center;
+      margin: 24px 10px;
+      padding: 4px 16px;
+      text-decoration: none;
+
+      border-style: solid;
+      border-color: $border-color2;
+      border-radius: 8px;
+      border: transparent;
+      background-color: $border-color2;
+      font-size: 20px;
+    }
+
+    .logo {
+      margin: 0;
+      padding: 0;
+      border: none;
+      background-color: inherit;
+    }
+
+    img {
+      transform: translateY(7px);
+    }
+
+    button {
+      font-family: "Space Grotesk", sans-serif;
+      display: block;
+      color: $text-color;
+      text-align: center;
+      padding: 0px 0px;
+      text-decoration: none;
+      font-size: 16px;
+      border: none;
+      background-color: #00000000;
+    }
+  }
+}
+
+/* Main Content */
+.main-text {
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  word-wrap: normal;
+
+  .title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 45px;
+
+    .subtitle {
+      font-weight: 400;
+      font-size: 32px;
+    }
+
+    .subsubtitle {
+      letter-spacing: 10px;
+      line-height: 80px;
+      font-weight: bold;
+    }
+  }
+
+  p {
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .app-img {
+    box-shadow: inset 0px 0px 40px 10px rgba(0, 0, 0, 0.61);
+  }
+
+  .spacer {
+    height: 20px;
+  }
+
+  .final {
+    height: 137px;
+
+    .globe {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: center;
+    }
+
+    .down {
+      .tagline {
+        display: inline;
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 0px;
+        margin-right: 10px;
+      }
+
+      .dl-btn {
+        font-weight: 500;
+        font-family: "Space Grotesk", sans-serif;
+        color: var(--text-color);
+        padding: 4px 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-left: 15px;
+        text-decoration: none;
+
+        border-style: solid;
+        border-color: var(--1);
+        border-radius: 8px;
+        border: transparent;
+        background: linear-gradient(
+          90deg,
+          rgba(82, 0, 0, 0.2906835320290555) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.oops {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    border: 0px solid $border-color;
+    background-color: rgba(darken($border-color, 30%), 0.5);
+    border-radius: 15px;
+    padding: 1rem;
+    min-width: 300px;
+
+    #title {
+      font-size: 2rem;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.donating {
+  display: grid;
+  place-items: center;
+
+  border: 0px solid $border-color2;
+  border-radius: 8px;
+  background-color: $border-color2;
+
+  margin: 2rem 30px;
+  padding: 1.2rem;
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    transition: all 0.25s;
+  }
+}
+
+@media screen and (max-width: 1474px) {
+  .donating p {
+    font-size: 1.2rem;
+  }
+}

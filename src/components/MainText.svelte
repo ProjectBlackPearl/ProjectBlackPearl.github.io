@@ -23,10 +23,12 @@
         updates and perfection,
       </p>
       <br />
-      <p class="tagline">up your media game today.</p>
-      <a class="dl-btn" href="https://github.com/ProjectBlackPearl/pbpl">
-        Download
-      </a>
+      <div class="down">
+        <p class="tagline">up your media game today.</p>
+        <a class="dl-btn" href="https://github.com/ProjectBlackPearl/pbpl">
+          Download
+        </a>
+      </div>
     </div>
   </div>
 </div>
