@@ -53,7 +53,7 @@
         </li>
         <!-- Join the community (aka: Discord Server) -->
         <li class="navbar-items" style="float:right">
-          <a href="https://discord.gg/PbM5AjamNH"> Join the community </a>
+          <a href="https://discord.gg/VRXcjnuq6m"> Join the community </a>
         </li>
       </ul>
 
