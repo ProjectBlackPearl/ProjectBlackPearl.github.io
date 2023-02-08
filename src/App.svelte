@@ -2,6 +2,7 @@
   import MainText from "./components/MainText.svelte";
   import { Router, Route, Link } from "svelte-navigator";
   import Donating from "./components/Donating.svelte";
+  import "./app.scss";
 
   let innerWidth;
 </script>
@@ -16,46 +17,96 @@
 <svelte:window bind:innerWidth />
 
 <Router>
-  <main>
-    {#if innerWidth <= 1180}
-      <div class="oops">
-        <div class="content" style="width: calc({innerWidth} - 50);">
-          <span id="title">Oops</span>
-          <p>
-            Looks like your screen is too small to fit the content correctly
-          </p>
-          <p>
-            Please move to a bigger screen or enable Desktop mode if you're on
-            mobile
-          </p>
-        </div>
-      </div>
-    {:else}
+  {#if innerWidth > 649}
+    <main>
       <!-- Creates a ul element with anchors linking to different links -->
-      <ul class="navbar">
-        <!-- Logo -->
-        <li class="navbar-items">
-          <Link to="/" class="logo">
-            <img src="Logo.png" alt="Logo" width="250px" />
-          </Link>
-        </li>
-        <!-- Download URL -->
-        <li class="navbar-items" style="float:right">
-          <Link to="donate">Donate</Link>
-        </li>
-        <!-- Source code -->
-        <li class="navbar-items" style="float:right">
-          <a href="https://github.com/ProjectBlackPearl"> Source code </a>
-        </li>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/" class="home-logo">
+              <img class="logo" src="Logo.svg" alt="Logo" width="68px" />
+              {#if innerWidth > 925}
+                <strong class="logo-text">Project Black Pearl</strong>
+              {/if}
+            </Link>
+          </li>
+        </ul>
+        {#if innerWidth > 680}
+          <ul>
+            <!-- Download URL -->
+            <li class="navbar-items" style="float:right">
+              <button class="nav">
+                <Link to="donate">Donate</Link>
+              </button>
+            </li>
+            <!-- Source code -->
+            <li class="navbar-items" style="float:right">
+              <button class="nav">
+                <a href="https://github.com/ProjectBlackPearl"> Source code </a>
+              </button>
+            </li>
 
-        <li class="navbar-items" style="float:right">
-          <a href="https://projectblackpearl.github.io/wiki"> Wiki </a>
-        </li>
-        <!-- Join the community (aka: Discord Server) -->
-        <li class="navbar-items" style="float:right">
-          <a href="https://discord.gg/VRXcjnuq6m"> Join the community </a>
-        </li>
-      </ul>
+            <li class="navbar-items" style="float:right">
+              <button class="nav">
+                <a href="https://projectblackpearl.github.io/wiki"> Wiki </a>
+              </button>
+            </li>
+            <!-- Join the community (aka: Discord Server) -->
+            <li class="navbar-items" style="float:right">
+              <button class="nav">
+                <a href="https://discord.gg/VRXcjnuq6m"> Join the community </a>
+              </button>
+            </li>
+          </ul>
+        {:else}
+          <details role="list" dir="rtl">
+            <summary aria-haspopup="listbox" role="button" class="dropdown"
+              ><i class="fa-solid fa-bars" /></summary
+            >
+            <ul role="listbox">
+              <!-- Download URL -->
+              <li class="navbar-items" style="float:right">
+                <button class="nav">
+                  <Link to="donate" class="no-fucking-hover">Donate</Link>
+                </button>
+              </li>
+              <!-- Source code -->
+              <li class="navbar-items" style="float:right">
+                <button class="nav">
+                  <a
+                    href="https://github.com/ProjectBlackPearl"
+                    class="no-fucking-hover"
+                  >
+                    Source code
+                  </a>
+                </button>
+              </li>
+
+              <li class="navbar-items" style="float:right">
+                <button class="nav">
+                  <a
+                    href="https://projectblackpearl.github.io/wiki"
+                    class="no-fucking-hover"
+                  >
+                    Wiki
+                  </a>
+                </button>
+              </li>
+              <!-- Join the community (aka: Discord Server) -->
+              <li class="navbar-items" style="float:right">
+                <button class="nav">
+                  <a
+                    href="https://discord.gg/VRXcjnuq6m"
+                    class="no-fucking-hover"
+                  >
+                    Join the community
+                  </a>
+                </button>
+              </li>
+            </ul>
+          </details>
+        {/if}
+      </nav>
 
       <Route path="donate" primary={false}>
         <Donating />
@@ -63,6 +114,16 @@
       <Route path="/" primary={false}>
         <MainText />
       </Route>
-    {/if}
-  </main>
+    </main>
+  {:else}
+    <div class="oops">
+      <article>
+        <h1>Oops</h1>
+        <p>
+          Looks like your screen size is too small, please go to an bigger
+          screen or enable desktop mode on mobile
+        </p>
+      </article>
+    </div>
+  {/if}
 </Router>
