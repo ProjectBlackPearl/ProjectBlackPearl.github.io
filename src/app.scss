@@ -237,38 +237,45 @@ nav {
   }
 }
 
-.donating {
-  transition: all 0.5s 0s ease;
-  position: absolute;
-  top: 60px;
-  margin: 2.5rem 1rem;
+.center {
+  display: grid;
+  place-items: center;
 
-  .content {
-    h1 {
-      text-align: center;
-      padding: 0;
-      margin-bottom: 1rem;
-      font-size: 2.2rem;
-      transition: all 0.5s 0s ease;
-    }
+  .donating {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: all 0.5s 0s ease;
+    position: absolute;
+    top: 60px;
 
-    p {
-      font-size: 1rem;
-      margin-bottom: 10px;
-      transition: all 0.5s 0s ease;
-    }
+    .content {
+      h1 {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+        transition: all 0.5s 0s ease;
+      }
 
-    .wallets-btn {
-      display: flex;
-      justify-content: space-around;
+      p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        transition: all 0.5s 0s ease;
+      }
 
-      button {
-        background-color: darken($nav-color, 7%);
-        border-color: darken($nav-color, 7%);
-        padding: 10px;
-        margin: 0 3px;
-        width: auto;
-        font-size: 16px;
+      .wallets-btn {
+        display: flex;
+        justify-content: space-around;
+
+        button {
+          background-color: darken($nav-color, 7%);
+          border-color: darken($nav-color, 7%);
+          padding: 10px;
+          margin: 0 3px;
+          width: auto;
+          font-size: 16px;
+        }
       }
     }
   }
