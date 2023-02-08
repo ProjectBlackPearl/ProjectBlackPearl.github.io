@@ -22,6 +22,7 @@
       </p>
       <p class="wallets-btn">
         <Clipboard text="bc1qhmjt2vz72gxxeqmh4sah24j67lzpvum945c5eq" let:copy>
+          <!-- svelte-ignore a11y-no-redundant-roles -->
           <button on:click={copy} role="button"
             ><i class="fa-brands fa-bitcoin" />
             Bitcoin</button
@@ -31,18 +32,21 @@
           text="47d6EAGzmMb4ofL1fRgYaM4TDvjigcQfe5t64JLez97fJrrSoJvBwJLHzpVayWJUScE4WLcF79pdGQRWuPSPdMqT1MdXGjG"
           let:copy
         >
+          <!-- svelte-ignore a11y-no-redundant-roles -->
           <button on:click={copy} role="button"
             ><i class="fa-brands fa-monero" />
             Monero</button
           ><br />
         </Clipboard>
         <Clipboard text="0x76a1e6A87Abb8Cd2AA1811E489b0C67d00DAdB3f" let:copy>
+          <!-- svelte-ignore a11y-no-redundant-roles -->
           <button on:click={copy} role="button"
             ><i class="fa-brands fa-ethereum" />
             Ethereum</button
           ><br />
         </Clipboard>
         <Clipboard text="LZbyxofFgXBBRQJKu5MsLT8cdf418WaVuk" let:copy>
+          <!-- svelte-ignore a11y-no-redundant-roles -->
           <button on:click={copy} role="button"
             ><i class="fa-solid fa-litecoin-sign" />
             Litecoin</button

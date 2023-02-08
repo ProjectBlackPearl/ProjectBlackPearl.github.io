@@ -60,6 +60,7 @@
           </ul>
         {:else}
           <details role="list" dir="rtl">
+            <!-- svelte-ignore a11y-no-redundant-roles -->
             <summary aria-haspopup="listbox" role="button" class="dropdown"
               ><i class="fa-solid fa-bars" /></summary
             >

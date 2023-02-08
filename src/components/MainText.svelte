@@ -13,12 +13,15 @@
       <h1>Unify your game sources in one place</h1>
     {/if}
     <div class="downloads">
+      <!-- svelte-ignore a11y-no-redundant-roles -->
       <button role="button">
         <i class="fa-brands fa-windows" />
       </button>
+      <!-- svelte-ignore a11y-no-redundant-roles -->
       <button role="button">
         <i class="fa-brands fa-apple" />
       </button>
+      <!-- svelte-ignore a11y-no-redundant-roles -->
       <button role="button">
         <i class="fa-brands fa-linux" />
       </button>
