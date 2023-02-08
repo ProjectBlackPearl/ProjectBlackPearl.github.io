@@ -7,7 +7,11 @@
 <div class="top">
   <div class="background" />
   <div class="content">
-    <h1>Unify your game sources in one place</h1>
+    {#if innerWidth <= 641}
+      <h1>Unify your game sources<br />in one place</h1>
+    {:else}
+      <h1>Unify your game sources in one place</h1>
+    {/if}
     <div class="downloads">
       <button role="button">
         <i class="fa-brands fa-windows" />

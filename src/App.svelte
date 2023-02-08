@@ -17,7 +17,7 @@
 <svelte:window bind:innerWidth />
 
 <Router>
-  {#if innerWidth > 649}
+  {#if innerWidth > 412}
     <main>
       <!-- Creates a ul element with anchors linking to different links -->
       <nav>
