@@ -1,233 +1,501 @@
-@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&family=Space+Grotesk:wght@300;400;500;600;700&family=&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap");
 
-$text-color: #fff;
-$background-color: rgba(0, 0, 0, 0.535);
+$text-color: #edf0f3;
+$background-color: #11191f;
+$ligher-bg: lighten($background-color, 5%);
 $border-color: rgb(81, 81, 81);
 $border-color2: rgba(255, 255, 255, 0.178);
+$nav-color: #733380;
 
-html {
-  background-image: url("/bg.png");
-  background-size: 300vw 300vh;
-  background-repeat: no-repeat;
+.no-fucking-hover:hover {
+  background-color: darken($nav-color, 7%);
 }
 
-:root {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 16px;
-  line-height: 34px;
-  font-weight: 500;
+nav {
+  z-index: 11;
+  position: fixed;
+  width: 100%;
+  background-color: darken($nav-color, 2%);
+  padding: 6px 15px;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  li {
+    padding: 5px 10px 5px 10px;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-
-  outline: none;
-
-  /* Variables */
-  --text-wrap-size: 23%;
-}
-
-/* Tags Config */
-body {
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-}
-
-button {
-  cursor: pointer;
-}
-
-/* Navbar */
-.navbar {
-  background-color: $background-color;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-
-  .navbar-items {
-    float: left;
-
-    a {
-      font-family: "Space Grotesk", sans-serif;
-      display: block;
-      color: $text-color;
-      text-align: center;
-      margin: 24px 10px;
-      padding: 4px 16px;
-      text-decoration: none;
-
-      border-style: solid;
-      border-color: $border-color2;
-      border-radius: 8px;
-      border: transparent;
-      background-color: $border-color2;
-      font-size: 20px;
+    .home-logo:focus {
+      background-color: $nav-color;
+      border: none;
     }
 
-    .logo {
-      margin: 0;
-      padding: 0;
-      border: none;
-      background-color: inherit;
+    .nav {
+      background-color: darken($nav-color, 5%);
+      border-color: darken($nav-color, 5%);
+
+      & a:focus {
+        background-color: inherit;
+        border-color: inherit;
+      }
+
+      &:active,
+      &:hover {
+        background-color: darken($nav-color, 7%);
+        border-color: darken($nav-color, 7%);
+      }
+    }
+
+    a {
+      color: $text-color;
+      font-weight: 700;
+
+      .logo {
+        background-color: $text-color;
+        border: 3px solid $text-color;
+        border-radius: 100px;
+      }
+
+      strong {
+        padding-left: 10px;
+        font-size: 1.2rem;
+        color: $text-color;
+      }
+    }
+  }
+
+  details {
+    margin-top: 13px;
+    .dropdown {
+      background-color: darken($nav-color, 7%);
+      border-color: darken($nav-color, 7%);
+      height: 10px;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.top {
+  height: 600px;
+  .background {
+    background-image: url("/topBg.png");
+    background-size: cover;
+    opacity: 0.6;
+    height: 600px;
+  }
+
+  .content {
+    position: relative;
+    top: -16.5rem;
+    display: grid;
+    justify-content: center;
+
+    h1 {
+      text-align: center;
+      font-size: 2.7rem;
+      text-shadow: rgb(0, 0, 0) 3px 0px 0px,
+        rgb(0, 0, 0, 0.6) 2.83487px 0.981584px 0px,
+        rgb(0, 0, 0, 0.6) 2.35766px 1.85511px 0px,
+        rgb(0, 0, 0, 0.6) 1.62091px 2.52441px 0px,
+        rgb(0, 0, 0, 0.6) 0.705713px 2.91581px 0px,
+        rgb(0, 0, 0, 0.6) -0.287171px 2.98622px 0px,
+        rgb(0, 0, 0, 0.6) -1.24844px 2.72789px 0px,
+        rgb(0, 0, 0, 0.6) -2.07227px 2.16926px 0px,
+        rgb(0, 0, 0, 0.6) -2.66798px 1.37182px 0px,
+        rgb(0, 0, 0, 0.6) -2.96998px 0.42336px 0px,
+        rgb(0, 0, 0, 0.6) -2.94502px -0.571704px 0px,
+        rgb(0, 0, 0, 0.6) -2.59586px -1.50383px 0px,
+        rgb(0, 0, 0, 0.6) -1.96093px -2.27041px 0px,
+        rgb(0, 0, 0, 0.6) -1.11013px -2.78704px 0px,
+        rgb(0, 0, 0, 0.6) -0.137119px -2.99686px 0px,
+        rgb(0, 0, 0, 0.6) 0.850987px -2.87677px 0px,
+        rgb(0, 0, 0, 0.6) 1.74541px -2.43999px 0px,
+        rgb(0, 0, 0, 0.6) 2.44769px -1.73459px 0px,
+        rgb(0, 0, 0, 0.6) 2.88051px -0.838247px 0px;
+      margin-bottom: 1rem;
+    }
+
+    .downloads {
+      display: flex;
+      justify-content: center;
+
+      button {
+        margin: 0 5px;
+        background-color: $nav-color;
+        border-color: $nav-color;
+        width: auto;
+
+        &:hover {
+          background-color: darken($nav-color, 7%);
+          border-color: darken($nav-color, 7%);
+        }
+
+        i {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.main-content {
+  transition: all 0.5s 0s ease;
+  article {
+    margin: 0;
+    box-sizing: none;
+  }
+
+  .what {
+    background-color: inherit;
+
+    height: auto;
+
+    h1 {
+      display: inline-block;
+      padding-top: 4rem;
+      padding-left: 5rem;
+      font-size: 2.5rem;
+      font-weight: 400;
+      transition: all 0.5s 0s ease;
     }
 
     img {
-      transform: translateY(7px);
+      float: right;
+      margin-right: 5rem;
+      margin-top: 4rem;
+      box-shadow: 0px 0px 89px -16px rgba(0, 0, 0, 0.75);
+      transition: all 0.5s 0s ease;
     }
 
-    button {
-      font-family: "Space Grotesk", sans-serif;
-      display: block;
-      color: $text-color;
-      text-align: center;
-      padding: 0px 0px;
-      text-decoration: none;
-      font-size: 16px;
-      border: none;
-      background-color: #00000000;
+    p {
+      width: 25rem;
+      font-size: 1.2rem;
+      margin-left: 5rem;
+      transition: all 0.5s 0s ease;
     }
   }
-}
 
-/* Main Content */
-.main-text {
-  font-family: "Space Grotesk", sans-serif;
-  text-align: center;
-  margin-top: 30px;
-  text-align: center;
-  font-size: 30px;
-  word-wrap: normal;
+  .features {
+    display: flex;
+    flex-direction: column;
 
-  .title {
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 45px;
-
-    .subtitle {
+    h1 {
+      text-align: center;
       font-weight: 400;
-      font-size: 32px;
     }
 
-    .subsubtitle {
-      letter-spacing: 10px;
-      line-height: 80px;
-      font-weight: bold;
-    }
-  }
+    .items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
 
-  p {
-    padding-top: 20px;
-    font-size: 20px;
-    line-height: 20px;
-  }
+      .item {
+        padding: 10px;
 
-  .app-img {
-    box-shadow: inset 0px 0px 40px 10px rgba(0, 0, 0, 0.61);
-  }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
 
-  .spacer {
-    height: 20px;
-  }
+        .fa-user-gear,
+        .fa-computer {
+          padding: 0.7rem 0.5rem;
+          display: inline;
+          border: 8px solid $nav-color;
+          background-color: $nav-color;
+          border-radius: 100px;
+          text-align: center;
+          font-size: 2rem;
+        }
 
-  .final {
-    height: 137px;
+        i {
+          padding: 0.7rem;
+          display: inline;
+          border: 6px solid $nav-color;
+          background-color: $nav-color;
+          border-radius: 100px;
+          text-align: center;
+          font-size: 2rem;
+        }
 
-    .globe {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      text-align: center;
-    }
-
-    .down {
-      .tagline {
-        display: inline;
-        font-weight: 700;
-        font-size: 30px;
-        margin-top: 0px;
-        margin-right: 10px;
-      }
-
-      .dl-btn {
-        font-weight: 500;
-        font-family: "Space Grotesk", sans-serif;
-        color: var(--text-color);
-        padding: 4px 10px;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-left: 15px;
-        text-decoration: none;
-
-        border-style: solid;
-        border-color: var(--1);
-        border-radius: 8px;
-        border: transparent;
-        background: linear-gradient(
-          90deg,
-          rgba(82, 0, 0, 0.2906835320290555) 0%,
-          rgba(0, 0, 0, 1) 100%
-        );
-        font-size: 20px;
+        span {
+          font-size: 1.2rem;
+          padding-top: 5px;
+        }
       }
     }
   }
 }
 
 .oops {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  overflow: hidden;
+  margin: 0px 15px;
 
-  padding-left: 1.3rem;
-  padding-right: 1.3rem;
+  h1 {
+    font-size: 3rem;
+  }
 
-  align-items: center;
-  justify-content: center;
+  p {
+    font-size: 1.2rem;
+  }
+}
 
-  .content {
-    border: 0px solid $border-color;
-    background-color: rgba(darken($border-color, 30%), 0.5);
-    border-radius: 15px;
-    padding: 1rem;
-    min-width: 300px;
+.center {
+  display: grid;
+  place-items: center;
 
-    #title {
-      font-size: 2rem;
+  .donating {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: all 0.5s 0s ease;
+    position: absolute;
+    top: 60px;
+
+    .content {
+      h1 {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+        transition: all 0.5s 0s ease;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        transition: all 0.5s 0s ease;
+      }
+
+      .wallets-btn {
+        display: flex;
+        justify-content: space-around;
+
+        button {
+          background-color: darken($nav-color, 7%);
+          border-color: darken($nav-color, 7%);
+          padding: 10px;
+          margin: 0 3px;
+          width: auto;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+// Media queries for the "What is PBP section"
+@media screen and (max-width: 1570px) {
+  .main-content .what {
+    h1 {
+      display: inline-block;
+      padding-top: 4rem;
+      padding-left: 4rem;
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+
+    img {
+      margin-top: 2.4rem;
+      margin-right: 4rem;
+      width: 600px;
     }
 
     p {
+      width: 25rem;
+      font-size: 1.2rem;
+      margin-left: 4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1436px) {
+  .main-content .what {
+    h1 {
+      padding-left: 2.5rem;
+    }
+
+    img {
+      margin-top: 2.4rem;
+      margin-right: 2.5rem;
+      width: 600px;
+    }
+
+    p {
+      width: 25rem;
+      font-size: 1.2rem;
+      margin-left: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1347px) {
+  .main-content .what {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      padding: 0;
+    }
+
+    p {
+      padding-bottom: 30px;
+      width: auto;
+      font-size: 1.2rem;
       margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  .main-content .what img {
+    width: 890px;
+    float: right;
+    margin-right: 5rem;
+    margin-top: 4rem;
+    box-shadow: 0px 0px 89px -16px rgba(0, 0, 0, 0.75);
+    transition: all 0.5s 0s ease;
+  }
+}
+
+@media screen and (min-width: 2393px) {
+  .main-content .what img {
+    width: 1100px;
+    float: right;
+    margin-right: 5rem;
+    margin-top: 4rem;
+    box-shadow: 0px 0px 89px -16px rgba(0, 0, 0, 0.75);
+    transition: all 0.5s 0s ease;
+  }
+}
+// End of media queries for the "What is PBP section"
+
+// Media queries for the main title "Unify your..."
+@media screen and (max-width: 850px) {
+  .top .content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .top .content {
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    .downloads button i {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 641px) {
+  .top .content {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .downloads button i {
       font-size: 1.3rem;
     }
   }
 }
 
-.donating {
-  display: grid;
-  place-items: center;
+@media screen and (max-width: 550px) {
+  .top .content {
+    h1 {
+      font-size: 2.4rem;
+    }
 
-  border: 0px solid $border-color2;
-  border-radius: 8px;
-  background-color: $border-color2;
-
-  margin: 2rem 30px;
-  padding: 1.2rem;
-
-  h1 {
-    font-size: 40px;
-  }
-
-  p {
-    font-size: 1.5rem;
-    transition: all 0.25s;
+    .downloads button i {
+      font-size: 1.2rem;
+    }
   }
 }
 
-@media screen and (max-width: 1474px) {
-  .donating p {
-    font-size: 1.2rem;
+@media screen and (max-width: 464px) {
+  .top .content {
+    h1 {
+      font-size: 2.1rem;
+    }
+
+    .downloads button i {
+      font-size: 1.2rem;
+    }
   }
 }
+// End of media queries for the main title "Unify your..."
+
+// Media queries for the features section
+@media screen and (max-width: 886px) {
+  .main-content .features .items {
+    .item {
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 721px) {
+  .main-content .features .items {
+    .item {
+      span {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .main-content .features {
+    .items {
+      display: block;
+
+      .item {
+        span {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+// End of media queries for the features section
+
+// Media queries for the donating page
+@media screen and (max-width: 1121px) {
+  .donating .content {
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1018px) {
+  .donating .content {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+// This was the only option other than cutting it off earlier
+// (sigh) guess this will have to do
+// @media screen and (max-width: 829px) {
+//   .donating .content {
+//     h1 {
+//       font-size: 1.8rem;
+//     }
+
+//     p {
+//       font-size: 0.6rem;
+//     }
+//   }
+// }
