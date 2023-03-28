@@ -15,7 +15,7 @@
           following wallets:
         </p>
         <p class="wallets-btn">
-          <Clipboard text="bc1qhmjt2vz72gxxeqmh4sah24j67lzpvum945c5eq" let:copy>
+          <Clipboard text="bc1q0c7kxkr3mh436htjpxhku87nhf859h7ens69zl" let:copy>
             <!-- svelte-ignore a11y-no-redundant-roles -->
             <button on:click={copy} role="button"
               ><i class="fa-brands fa-bitcoin" />
@@ -23,7 +23,7 @@
             ><br />
           </Clipboard>
           <Clipboard
-            text="47d6EAGzmMb4ofL1fRgYaM4TDvjigcQfe5t64JLez97fJrrSoJvBwJLHzpVayWJUScE4WLcF79pdGQRWuPSPdMqT1MdXGjG"
+            text="4AUjCnbeY5j6yz6xSHtHFuDMYkniHydz3fu48pr3eqUSV8vRjrRTpxgVSHfgp5gJpwiqbxiN7bVixX1YF6bED668LWMqqBX"
             let:copy
           >
             <!-- svelte-ignore a11y-no-redundant-roles -->
@@ -32,14 +32,14 @@
               Monero</button
             ><br />
           </Clipboard>
-          <Clipboard text="0x76a1e6A87Abb8Cd2AA1811E489b0C67d00DAdB3f" let:copy>
+          <Clipboard text="0x53550c028f95b6a633D9c0EeaBd4887F013de038" let:copy>
             <!-- svelte-ignore a11y-no-redundant-roles -->
             <button on:click={copy} role="button"
               ><i class="fa-brands fa-ethereum" />
               Ethereum</button
             ><br />
           </Clipboard>
-          <Clipboard text="LZbyxofFgXBBRQJKu5MsLT8cdf418WaVuk" let:copy>
+          <Clipboard text="Lg9Uim9p3dj2KGy4225x6vMnZXBtr5DneN" let:copy>
             <!-- svelte-ignore a11y-no-redundant-roles -->
             <button on:click={copy} role="button"
               ><i class="fa-solid fa-litecoin-sign" />
@@ -67,13 +67,13 @@
         </p>
         <p class="wallets">
           <i class="fa-brands fa-bitcoin" /> Bitcoin:
-          bc1qhmjt2vz72gxxeqmh4sah24j67lzpvum945c5eq <br />
+          bc1q0c7kxkr3mh436htjpxhku87nhf859h7ens69zl <br />
           <i class="fa-brands fa-monero" /> Monero:
-          47d6EAGzmMb4ofL1fRgYaM4TDvjigcQfe5t64JLez97fJrrSoJvBwJLHzpVayWJUScE4WLcF79pdGQRWuPSPdMqT1MdXGjG
+          4AUjCnbeY5j6yz6xSHtHFuDMYkniHydz3fu48pr3eqUSV8vRjrRTpxgVSHfgp5gJpwiqbxiN7bVixX1YF6bED668LWMqqBX
           <br />
           <i class="fa-brands fa-ethereum" /> Ethereum:
-          0x76a1e6A87Abb8Cd2AA1811E489b0C67d00DAdB3f <br />
-          <i class="fa-solid fa-litecoin-sign" /> Litecoin: LZbyxofFgXBBRQJKu5MsLT8cdf418WaVuk
+          0x53550c028f95b6a633D9c0EeaBd4887F013de038 <br />
+          <i class="fa-solid fa-litecoin-sign" /> Litecoin: Lg9Uim9p3dj2KGy4225x6vMnZXBtr5DneN
         </p>
         <p>
           All donations will go toward operating costs and supporting the
